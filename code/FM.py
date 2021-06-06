@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/home/wwx/wwx/IBFM')
+sys.path.append('/home/wwx/wwx/Instance-weight-Balanced-Factorization-Machine') 
 import argparse
 from util.dataset import FrappeDataSet
 from torch.utils.data import DataLoader

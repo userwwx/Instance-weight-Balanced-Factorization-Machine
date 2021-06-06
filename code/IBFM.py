@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/home/wwx/wwx/IBFM')
+sys.path.append('/home/wwx/wwx/Instance-weight-Balanced-Factorization-Machine') # the path in your system
 import argparse
 from util.dataset import FrappeDataSet
 from torch.utils.data import DataLoader
@@ -30,7 +30,7 @@ parser.add_argument('-verbose', default=1, type=int, help='Whether to show the p
 parser.add_argument('-attention_size', default=16, type=int, help='the attention size of the attention netwrok')
 parser.add_argument('-la', default=32, type=float, help='regularizer for the attention network')
 parser.add_argument('-att_dropout', default=0.3, type=float, help='dropout rate for the interaction attention layer')
-parser.add_argument('-save', default=1, type=int, help='Whether to save the model state dict (1 or 0)')
+parser.add_argument('-save', default=0, type=int, help='Whether to save the model state dict (1 or 0)')
 pars = parser.parse_args()
 
 if not torch.cuda.is_available():
