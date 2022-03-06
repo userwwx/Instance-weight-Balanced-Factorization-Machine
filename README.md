@@ -8,11 +8,11 @@ This repository provides a PyTorch implementation and datasets of IBFM.
 
 1. Python 3.7
 
-2. PyTorch
+2. PyTorch 1.6
 
 3. Pandas
 
-5. Sklearn
+4. Sklearn
 
 
 
